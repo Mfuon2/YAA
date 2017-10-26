@@ -5,7 +5,11 @@ var activateFinish = function (yes) {
 
     if(state === 'yes'){
         this.enableButton('finish');
-        this.changeButtonValue('finish','Proceed To Step 2');
+        this.changeButtonValue('finish','Save');
+
+        el('finish').addEventListener("click", function(){
+           redirect('stepTow.php');
+        });
     }else
         return el('finish').disabled=false;
 };
@@ -21,6 +25,14 @@ var changeButtonValue = function(id,msg){
     return el(id).value=msg;
 };
 
+var redirect = function(url){
+    return window.location.assign(url);
+};
+
+
 (function disable(){
     return el('finish').disabled=true;
+})();
+(function disable(){
+    return el('proceed').disabled=true;
 })();

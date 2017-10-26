@@ -362,7 +362,7 @@
 		                        <div class="wizard-footer">
 		                            <div class="pull-right">
 		                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-		                                <input type='submit' id="finish" class='btn btn-finish btn-fill btn-warning btn-wd' name='finish'  value='Finish'/>
+		                                <input  href="#address" id="finish" class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Save'/>
 		                            </div>
 
 		                            <div class="pull-left">
