@@ -12,33 +12,33 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <title>Youth Advocacy Accelerator</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="../assets/css/demo.css" rel="stylesheet" />
 
     <!-- Fonts and Icons -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="../assets/css/themify-icons.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="image-container set-full-height" style="background-image: url('assets/img/paper-1.jpeg')">
+<div class="image-container set-full-height" style="background-image: url('../assets/img/paper-1.jpeg')">
     <!--   Creative Tim Branding   -->
     <a href="#">
 
         <div class="logo-container">
-            <img src="assets/img/new_logo.png" style="width: 200px">
+            <img src="../assets/img/new_logo.png" style="width: 200px">
             <div class="logo">
 
             </div>
@@ -92,14 +92,14 @@
                                             Devices
                                         </a>
                                     </li>
-                                    <li>
+                               <!--     <li>
                                         <a href="#address" data-toggle="tab">
                                             <div class="icon-circle">
                                                 <i class="ti-agenda"></i>
                                             </div>
                                             Finish Step I
                                         </a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </div>
 
@@ -351,7 +351,7 @@
                                         </div>
                                     </div>
                                 </div>
-
+<!--
 
                                 <div class="tab-pane" id="address">
                                     <div class="row">
@@ -369,13 +369,12 @@
                                             </h5>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                             <div class="wizard-footer">
                                 <div class="pull-right">
                                     <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-                                    <input type='submit' id="finish" class='btn btn-finish btn-fill btn-warning btn-wd' name='finish'  value='Finish'/>
-                                    <input type='submit' id="finish" class='btn btn-finish btn-fill btn-warning btn-wd' name='finish'  value='Finish'/>
+                                    <button data-toggle="modal" data-target="#myModal" class='btn btn-finish btn-fill btn-warning btn-wd'>Save</button>
                                 </div>
 
                                 <div class="pull-left">
@@ -397,19 +396,56 @@
     </div>
 </div>
 
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- dialog body -->
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                Hello world!
+            </div>
+            <!-- dialog buttons -->
+            <div class="modal-footer"><button type="button" class="btn btn-primary">OK</button></div>
+        </div>
+    </div>
+</div>
+
 </body>
 
+<!-- sometime later, probably inside your on load event callback -->
+<script>
+    $("#myModal").on("show", function() {    // wire up the OK button to dismiss the modal when shown
+        $("#myModal a.btn").on("click", function(e) {
+            console.log("button pressed");   // just as an example...
+            $("#myModal").modal('hide');     // dismiss the dialog
+        });
+    });
+    $("#myModal").on("hide", function() {    // remove the event listeners when the dialog is dismissed
+        $("#myModal a.btn").off("click");
+    });
+
+    $("#myModal").on("hidden", function() {  // remove the actual elements from the DOM when fully hidden
+        $("#myModal").remove();
+    });
+
+    $("#myModal").modal({                    // wire up the actual modal functionality and show the dialog
+        "backdrop"  : "static",
+        "keyboard"  : true,
+        "show"      : true                     // ensure the modal is shown immediately
+    });
+</script>
 <!--   Core JS Files   -->
-<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-<script src="app/app.js" type="text/javascript"></script>
+<script src="../assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+<script src="../app/app.js" type="text/javascript"></script>
+<script src="../app/bootbox.min.js" type="text/javascript"></script>
 
 <!--  Plugin for the Wizard -->
-<script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+<script src="../assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
 
 <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.validate.min.js" type="text/javascript"></script>
 
 </html>
 

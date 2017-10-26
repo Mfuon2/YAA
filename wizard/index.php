@@ -348,7 +348,7 @@
 		                                    <div class="col-sm-12">
 		                                        <h5 class="info-text"> Are you part of an advocacy organisation/network ?
                                                     <br>
-                                                    <a href="#" class="btn btn-fill btn-primary" onclick="activateFinish('yes')">
+                                                    <a href="step/index.php" class="btn btn-fill btn-primary" onclick="activateFinish('yes')">
                                                             Yes
                                                     </a>
                                                         <a href="#" class="btn btn-fill btn-danger" onclick="activateFinish()">

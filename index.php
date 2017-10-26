@@ -57,7 +57,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-face"></i>
                         Pin
                     </a>
                 </li>
