@@ -145,30 +145,73 @@
                                                 <div class="form-group">
                                                     <div class="form-group">
                                                         <label>Phone Number <small>(required)</small></label>
-                                                        <input name="phone" type="text" class="form-control" placeholder="+2547222222">
+                                                        <input name="phone" type="text" value="" class="form-control" placeholder="+2547222222">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="form-group">
                                                         <label>Email <small>(required)</small></label>
-                                                        <input name="email" type="email" class="form-control" placeholder="username@xyz.com">
+                                                        <input name="email" type="email" class="form-control" value="" placeholder="username@xyz.com">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Town/City <small>(required)</small></label>
-                                                    <select class="form-control">
-                                                        <option disabled="" selected="">- Town/City -</option>
-                                                        <option value="NAI">Nairobi</option>
-                                                        <option value="MOM">Mombasa</option>
-                                                        <option value="KIS">Kisumu</option>
-                                                        <option value="NAK">Nakuru</option>
-                                                    </select>
+                                                    <label>County <small>(required)</small></label>
+                                                    <select class="form-control" name="county">
+                                                        <option disabled="" selected="">- County -</option>
+                                                        <option value="Baringo">Baringo</option>
+                                                        <option value="Bomet">Bomet</option>
+                                                        <option value="Bungoma">Bungoma</option>
+                                                        <option value="Busia">Busia</option>
+                                                        <option value="Elgeyo Marakwet">Elgeyo Marakwet</option>
+                                                        <option value="Embu">Embu</option>
+                                                        <option value="Garissa">Garissa</option>
+                                                        <option value="Homa Bay">Homa Bay</option>
+                                                        <option value="Isiolo">Isiolo</option>
+                                                        <option value="Kajiado">Kajiado</option>
+                                                        <option value=" Kakamega">Nakuru</option>
+                                                        <option value="Kericho">Kericho</option>
+                                                        <option value="Kiambu">Kiambu</option>
+                                                        <option value="Kilifi">Kilifi</option>
+                                                        <option value="Kirinyaga">Kirinyaga</option>
+                                                        <option value="Kisii">Kisii</option>
+                                                        <option value="Kisumu">Kisumu</option>
+                                                        <option value="Kitui">Kitui</option>
+                                                        <option value="Kwale">Kwale</option>
+                                                        <option value="Laikipia">Nakuru</option>
+                                                        <option value="Lamu">Lamu</option>
+                                                        <option value="Machakos">Machakos</option>
+                                                        <option value="Makueni">Makueni</option>
+                                                        <option value="Mandera">Mandera</option>
+                                                        <option value="Meru">Meru</option>
+                                                        <option value="Migori">Migori</option>
+                                                        <option value="Marsabit">Marsabit</option>
+                                                        <option value="Mombasa">Mombasa</option>
+                                                        <option value="Murang'a">Murang'a</option>
+                                                        <option value="Nairobi">Nairobi</option>
+                                                        <option value="Nakuru">Nakuru</option>
+                                                        <option value="Nandi">Nandi</option>
+                                                        <option value="Narok">Narok</option>
+                                                        <option value="Nyamira">Nyamira</option>
+                                                        <option value="Nyandarua">Nyandarua</option>
+                                                        <option value="Nyeri">Nyeri</option>
+                                                        <option value="Samburu">Samburu</option>
+                                                        <option value="Siaya">Siaya</option>
+                                                        <option value="Taita Taveta">Taita Taveta</option>
+                                                        <option value="Tana River">Tana River</option>
+                                                        <option value="Tharaka Nithi">Tharaka Nithi</option>
+                                                        <option value="Trans Nzoia">Trans Nzoia</option>
+                                                        <option value="Turkana">Turkana</option>
+                                                        <option value="Uasin Gishu">Uasin Gishu</option>
+                                                        <option value="Vihiga">Vihiga</option>
+                                                        <option value="Wajir">Wajir</option>
+                                                        <option value="West Pokot">West Pokot</option>
                                                 </div>
+
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
                                                     <label>Gender <small>(required)</small></label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="gender">
                                                         <option disabled="" selected="">- Gender -</option>
                                                         <option value="M">Male</option>
                                                         <option value="F">Female </option>
@@ -176,11 +219,11 @@
                                                         <option value="GNC">Gender non- conforming</option>
                                                         <option value="O">Other (Specify) </option>
                                                     </select>
-                                                    <input name="specifyCountry" type="text" hidden placeholder="country">
+                                                    <input name="specifyCountry" type="text" hidden placeholder="country" value="">
 												</div>
                                                 <div class="form-group">
                                                     <label>Age <small>(required)</small></label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="age">
                                                         <option disabled="" selected="">- Age -</option>
                                                         <option value="<18"><18</option>
                                                         <option value="18-24">18-24</option>
@@ -190,7 +233,7 @@
                                                 </div>
 												<div class="form-group">
                                                     <label>Country <small>(required)</small></label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="country">
                                                         <option disabled="" selected="">- Country -</option>
                                                         <option value="KE">Kenya</option>
                                                         <option value="O">Other</option>
@@ -199,12 +242,55 @@
 												</div>
                                                 <div class="form-group">
                                                     <label>County <small>(required)</small></label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="county">
                                                         <option disabled="" selected="">- County -</option>
-                                                        <option value="NAIROBI">Nairobi</option>
-                                                        <option value="LAIKIPIA">Laikipia</option>
-                                                        <option value="KISUMU">Kisumu</option>
-                                                        <option value="NAKURU">Nakuru</option>
+                                                        <option value="Baringo">Baringo</option>
+                                                        <option value="Bomet">Bomet</option>
+                                                        <option value="Bungoma">Bungoma</option>
+                                                        <option value="Busia">Busia</option>
+                                                        <option value="Elgeyo Marakwet">Elgeyo Marakwet</option>
+                                                        <option value="Embu">Embu</option>
+                                                        <option value="Garissa">Garissa</option>
+                                                        <option value="Homa Bay">Homa Bay</option>
+                                                        <option value="Isiolo">Isiolo</option>
+                                                        <option value="Kajiado">Kajiado</option>
+                                                        <option value=" Kakamega">Nakuru</option>
+                                                        <option value="Kericho">Kericho</option>
+                                                        <option value="Kiambu">Kiambu</option>
+                                                        <option value="Kilifi">Kilifi</option>
+                                                        <option value="Kirinyaga">Kirinyaga</option>
+                                                        <option value="Kisii">Kisii</option>
+                                                        <option value="Kisumu">Kisumu</option>
+                                                        <option value="Kitui">Kitui</option>
+                                                        <option value="Kwale">Kwale</option>
+                                                        <option value="Laikipia">Nakuru</option>
+                                                        <option value="Lamu">Lamu</option>
+                                                        <option value="Machakos">Machakos</option>
+                                                        <option value="Makueni">Makueni</option>
+                                                        <option value="Mandera">Mandera</option>
+                                                        <option value="Meru">Meru</option>
+                                                        <option value="Migori">Migori</option>
+                                                        <option value="Marsabit">Marsabit</option>
+                                                        <option value="Mombasa">Mombasa</option>
+                                                        <option value="Murang'a">Murang'a</option>
+                                                        <option value="Nairobi">Nairobi</option>
+                                                        <option value="Nakuru">Nakuru</option>
+                                                        <option value="Nandi">Nandi</option>
+                                                        <option value="Narok">Narok</option>
+                                                        <option value="Nyamira">Nyamira</option>
+                                                        <option value="Nyandarua">Nyandarua</option>
+                                                        <option value="Nyeri">Nyeri</option>
+                                                        <option value="Samburu">Samburu</option>
+                                                        <option value="Siaya">Siaya</option>
+                                                        <option value="Taita Taveta">Taita Taveta</option>
+                                                        <option value="Tana River">Tana River</option>
+                                                        <option value="Tharaka Nithi">Tharaka Nithi</option>
+                                                        <option value="Trans Nzoia">Trans Nzoia</option>
+                                                        <option value="Turkana">Turkana</option>
+                                                        <option value="Uasin Gishu">Uasin Gishu</option>
+                                                        <option value="Vihiga">Vihiga</option>
+                                                        <option value="Wajir">Wajir</option>
+                                                        <option value="West Pokot">West Pokot</option>
                                                     </select>
                                                 </div>
 
@@ -216,21 +302,33 @@
                                     <div class="tab-pane" id="topics">
                                         <div class="row">
                                             <h5 class="info-text"> Topics Interested In <br>
-                                                <span> (CHECK ALL THAT APPLY)</span></h5>
+                                                <span> (Check All That Apply)</span></h5>
                                             <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label><input class="form-control" type="checkbox" value="Democracy/Governance">(Democracy/Governance)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Education">(Education)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Employment">(Employment)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Family planningn">(Family planning)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Gender equality">(Gender equality)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Health">(Health)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Nutrition">(Nutrition)</label>
-                                                    <label><input class="form-control" type="checkbox" value="Reproductive rights">(Reproductive rights)</label>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Democracy/Governance" name="democracy"/>Democracy/Governance</label>
                                                 </div>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Education" name="education"/>Education</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Family planning" name="family"/>Family planning</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Gender equality" name="genderequality"/>Gender equality</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Health" name="health"/>Health</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Nutrition"  name="nutrition"/>Nutrition</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input class="form-control" type="checkbox" value="Reproductive rights" name="reproductive"/>Reproductive rights</label>
+                                                </div>
+
                                                 <div class="form-group">
                                                     <label>Other (Specify) <small>(Optional)</small></label>
-                                                    <input name="otherMedia" type="text" class="form-control" placeholder="Other">
+                                                    <input name="otherMedia" type="text" class="form-control" value="" placeholder="Other">
                                                 </div>
 
                                             </div>
@@ -282,7 +380,7 @@
                                             <div class="form-group">
 
                                                 <label></i>Other (Specify) <small>(Optional)</small></label>
-                                                <input name="otherMedia" type="text" class="form-control" placeholder="Other">
+                                                <input name="otherMedia" type="text" class="form-control" placeholder="Other" value="">
                                             </div>
 		                                </div>
 		                            </div>
@@ -292,8 +390,8 @@
                                             <div class="col-sm-12">
                                                 <h5 class="info-text">Which Information or engagement in the following areas would support my advocacy efforts ? </h5>
                                             </div>
-                                            <div class="col-sm-7 col-sm-offset-1">
-                                                <div class="radio">
+                                            <div class="col-sm-5 ">
+                                                <div class="radio" name="optradio">
                                                     <label><input type="radio" name="optradio">Advocacy and communications tools and resources</label>
                                                 </div>
                                                 <div class="radio">
@@ -312,13 +410,13 @@
                                             <div class="col-sm-5">
                                                 <div class="radio" >
                                                     <label>Other (Specify)</label>
-                                                    <input type="text" class="form-control" placeholder="Other Source">
+                                                    <input type="text" class="form-control" placeholder="Other Source" value="">
                                                 </div>
                                             </div>
                                             <div class="col-sm-5">
                                                 <div class="form-group">
                                                     <label>How did you hear about the Youth Advocacy Portal?</label>
-                                                    <textarea class="form-control" placeholder="How You Knew About Us"></textarea>
+                                                    <textarea class="form-control" placeholder="How You Knew About Us" value=""></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-sm-5">
@@ -329,15 +427,18 @@
                                             </div>
                                             <div class="col-sm-5">
                                                 <div class="form-group">
+                                                    <label><a href="forgotPassword.php" target="_blank">Forgot my password ?</a></label><br>
+                                                </div>
+                                            </div>
+
+                                           
+                                            <div class="col-sm-5">
+                                                <div class="form-group">
                                                     <label>Confirm Password</label><br>
                                                     <input type="password" class="form-control" value="" placeholder="Other Source">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label><a href="forgotPassword.php" target="_blank">Forgot my password ?</a></label><br>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
 		                            <div class="tab-pane" id="address">
@@ -362,7 +463,7 @@
 		                        <div class="wizard-footer">
 		                            <div class="pull-right">
 		                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-		                                <input  href="#address" id="finish" class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Save'/>
+                                        <button  id="finish" class='btn btn-finish btn-fill btn-warning btn-wd' name='finish'> save</button>
 		                            </div>
 
 		                            <div class="pull-left">
@@ -394,6 +495,7 @@
 
 	<!--  Plugin for the Wizard -->
 	<script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
 	<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
