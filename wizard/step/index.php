@@ -39,11 +39,20 @@
                             </div>-->
         </div>
     </a>
+    <div class="collapse navbar-collapse" id="example" >
+        <ul class="nav navbar-nav navbar-right" >
+            <li>
+                <a href="#">
 
+                    <img src="../assets/img/AMREF.png" style="width: 100px" alt="Amref" ;>
+                </a>
+            </li>
+        </ul>
+    </div>
     <!--  Made With Paper Kit  -->
     <a href="http://amref.org" class="made-with-pk">
         <div class="brand">MK</div>
-        <div class="made-with">Made with <strong>Amref Kenya</strong></div>
+        <div class="made-with">Made by <strong>Mjali Kenya</strong></div>
     </a>
 
     <!--   Big container   -->
@@ -55,7 +64,7 @@
                 <div  class="wizard-container">
 
                     <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                        <form action="../../postLogic.php" method="POST" >
+                        <form action="stepOnePosting.php" method="POST" >
                             <div class="wizard-header text-center">
                                 <h3 class="wizard-title">Step 2</h3>
                                 <p class="category">Completing the survey and joining this growing network of youth will take less than 10 minutes</p>
@@ -323,7 +332,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Other (specify)</label>
-                                                <input name="others" class="form-control" type="text" placeholder="Other">
+                                                <input name="others" class="form-control" type="text" placeholder="Other level">
                                             </div>
                                         </div>
 
@@ -331,7 +340,7 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <div class="form-group">
-                                                    <label>We work at the following levels of government
+                                                    <label>We focus on the following advocacy topics
                                                         <small>(CHECK ALL THAT APPLY)</small></label>
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" value="Democracy/Governance">Democracy/Governance</label>
@@ -357,6 +366,10 @@
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" value="Reproductive rights">Reproductive rights</label>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label>Other (specify)</label>
+                                                        <input name="others" class="form-control" type="text" placeholder="Other topic">
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>We work in the following areas
@@ -372,8 +385,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Other (specify)</label>
-                                                    <input name="others" class="form-control" type="text" placeholder="Other">
+                                                    <label>Other area (specify)</label>
+                                                    <input name="others" class="form-control" type="text" placeholder="Other area">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -427,7 +440,7 @@
 
     <div class="footer">
         <div class="container text-center">
-            Made with<i class="fa fa-heart heart"></i> by <a href="http://amref.org">Amref Kenya</a>
+            Made with<i class="fa fa-heart heart"></i> by <a href="http://amref.org">Amref Health Africa</a>
         </div>
     </div>
 </div>

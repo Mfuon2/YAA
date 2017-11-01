@@ -11,7 +11,7 @@ var activateFinish = function (yes) {
            redirect('stepTow.php');
         });
     }else{
-        swal("Good job!", "Thank You for completing The Survey", "success");
+        swal("Good job!", "Thank You for completing The Survey. Please SAVE the Survey Before Exiting", "success");
         return el('finish').disabled=false;
     }
 
@@ -42,7 +42,11 @@ var clearDiv = function(){
 
 var success =  function () {
     el('saveLink').style.visibility = 'hidden';
-    return swal("Good job!", "You clicked the button!", "success");
+    return swal("Good job!", "Please SAVE the Survey Before Exiting", "success");
+};
+
+var successPhp =  function () {
+    return swal("Success", "Save Successful", "success");
 };
 
 

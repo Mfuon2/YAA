@@ -20,3 +20,10 @@
     margin-top: 10px;
     width: 60px
 }
+.logo{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    width: 60px;
+    float: right;
+}

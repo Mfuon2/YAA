@@ -31,8 +31,9 @@
             <a href="#">
                 <div class="logo-container">
                     <div>
-                        <img src="landing/assets/img/new_logo.png" style="width: 200px" alt="Youth Advocacy Accelerato">
+                        <img src="landing/assets/img/new_logo.png" style="width: 200px" alt="Youth Advocacy Accelerator">
                     </div>
+
                    <!-- <div class="brand">
                         Creative Tim
                     </div>-->
@@ -64,7 +65,7 @@
 
                 <li>
                     <a href="#">
-                        <img src="landing/assets/img/amref-logo.png" style="width: 100px" alt="Youth Advocacy Accelerato">
+                        <img src="landing/assets/img/amref_logo.png" style="width: 100px" alt="Youth Advocacy Accelerator">
                     </a>
                 </li>
             </ul>
@@ -305,7 +306,7 @@
             <div class="copyright">
                 &copy; <?php echo date("Y"); ?> <a href="http://www.creative-tim.com">Amref</a>
                 <a href="#">
-                    <img src="landing/assets/img/amref-logo.png" style="width: 100px" alt="Youth Advocacy Accelerato">
+                    <img src="landing/assets/img/amref_logo.png" style="width: 100px" alt="Youth Advocacy Accelerator">
                 </a>
             </div>
         </div>
