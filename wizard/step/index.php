@@ -132,7 +132,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Country <small>(required)</small></label>
-                                                <select class="form-control" name="country">
+                                                <select class="form-control" name="orgcountry">
                                                     <option disabled="" selected="">- Country -</option>
                                                     <option value="KE">Kenya</option>
                                                     <option value="O">Other</option>
@@ -242,7 +242,7 @@
                                                     <option value="MSS">Ministry of Social Services</option>
                                                     <option value="O">Other (specify) </option>
                                                 </select>
-                                                <label id="OtherBodyLabel" hidden >Other Body Specifications</label>
+                                                <label id="OtherBodyLabel" hidden >Other Registration Body </label>
                                                 <input name="umbrella" id="OtherBody" type="text" hidden required placeholder="Other Registration Body">
                                             </div>
                                             <div class="form-group">
@@ -254,7 +254,7 @@
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label>Number of Volunteers<small>(required)</small></label>
-                                                    <input class="form-control" name="position" type="number" placeholder="Number of Volunteers">
+                                                    <input class="form-control" name="volunteers" type="number" placeholder="Number of Volunteers">
                                                 </div>
                                             </div>
                                         </div>
@@ -278,7 +278,7 @@
 
                                                    </textarea>      <br>
                                                     <label class="btn btn-primary" for="my-file-selector">
-                                                        <input id="my-file-selector" type="file" style="display:none;">
+                                                        <input id="my-file-selector" type="file" style="display:none;" name="upload">
                                                         Upload A File
                                                     </label>
                                                 </div>
@@ -287,22 +287,22 @@
                                                 <div class="form-group">
                                                     <label>We work with and on behalf of <small>( CHECK ALL THAT APPLY )</small></label>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Primary school students">Primary school students</label>
+                                                        <label><input type="checkbox" value="Primary school students" name="primary">Primary school students</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Secondary school students">Secondary school students</label>
+                                                        <label><input type="checkbox" value="Secondary school students" name="secondary">Secondary school students</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="People with disabilities">People with disabilities</label>
+                                                        <label><input type="checkbox" value="People with disabilities" name="disabilities">People with disabilities</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Women and girls">Women and girls</label>
+                                                        <label><input type="checkbox" value="Women and girls" name="women">Women and girls</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="LGBTQ">LGBTQs</label>
+                                                        <label><input type="checkbox" value="LGBTQ" name="lgbtq">LGBTQs</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Youth (18-35) ">Youth(18-35)</label>
+                                                        <label><input type="checkbox" value="Youth (18-35) " name="youth">Youth(18-35)</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -311,28 +311,28 @@
                                                     <label>We work at the following levels of government
                                                         <small>( CHECK ALL THAT APPLY )</small></label>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Local/county">Local/county</label>
+                                                        <label><input type="checkbox" value="Local/county" name="county">Local/county</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Regional (within Kenya)">Regional (within Kenya)</label>
+                                                        <label><input type="checkbox" value="Regional (within Kenya)" name="region">Regional (within Kenya)</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="National">National</label>
+                                                        <label><input type="checkbox" value="National"name="national">National</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Regional (East Africa)">Regional (East Africa)</label>
+                                                        <label><input type="checkbox" value="Regional (East Africa)" name="eastAfrica">Regional (East Africa)</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Regional (Africa)">Regional (Africa)</label>
+                                                        <label><input type="checkbox" value="Regional (Africa)" name="Africa">Regional (Africa)</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Global">Global</label>
+                                                        <label><input type="checkbox" value="Global"name="global">Global</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label>Other (specify)</label>
-                                                <input name="others" class="form-control" type="text" placeholder="Other level">
+                                                <input name="otherlevel" class="form-control" type="text" placeholder="Other level">
                                             </div>
                                         </div>
 
@@ -343,28 +343,28 @@
                                                     <label>We focus on the following advocacy topics
                                                         <small>(CHECK ALL THAT APPLY)</small></label>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Democracy/Governance">Democracy/Governance</label>
+                                                        <label><input type="checkbox" value="Democracy/Governance" name="Democracy">Democracy/Governance</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Education">Education</label>
+                                                        <label><input type="checkbox" value="Education" name="Education">Education</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Employment">Employment</label>
+                                                        <label><input type="checkbox" value="Employment" name="Employment">Employment</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Family planning">Family planning</label>
+                                                        <label><input type="checkbox" value="Family planning" name="planning">Family planning</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Gender equality">Gender equality</label>
+                                                        <label><input type="checkbox" value="Gender equality" name="equality">Gender equality</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Health">Health</label>
+                                                        <label><input type="checkbox" value="Health" name="Health">Health</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Nutrition">Nutrition</label>
+                                                        <label><input type="checkbox" value="Nutrition" name="Nutrition">Nutrition</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Reproductive rights">Reproductive rights</label>
+                                                        <label><input type="checkbox" value="Reproductive rights" name="Reproductive">Reproductive rights</label>
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Other (specify)</label>
@@ -375,24 +375,24 @@
                                                     <label>We work in the following areas
                                                         <small>(CHECK ALL THAT APPLY)</small></label>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Urban">Urban</label>
+                                                        <label><input type="checkbox" value="Urban" name="urban">Urban</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Rural">Rural</label>
+                                                        <label><input type="checkbox" value="Rural" name="rural">Rural</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Slums">Slums</label>
+                                                        <label><input type="checkbox" value="Slums" name="slums">Slums</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Other area (specify)</label>
-                                                    <input name="others" class="form-control" type="text" placeholder="Other area">
+                                                    <input name="otherarea" class="form-control" type="text" placeholder="Other area">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label>We engage in the following types of advocacy<small>(e.g., lobbying, grassroots mobilization, etc)</small></label>
-                                                    <textarea class="form-control" placeholder="Types of advocacy"></textarea>
+                                                    <textarea class="form-control" placeholder="Types of advocacy" name="advocacytype"></textarea>
                                                 </div>
                                             </div>
                                         </div>
