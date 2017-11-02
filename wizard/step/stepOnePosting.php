@@ -21,21 +21,21 @@ if(!isset($_POST["device"])) {
     $device = $_POST["device"];
 }
 if(!isset($_POST["device2"])) {
-    $device='';
+    $device2='';
 }else{
-    $device = $_POST["device2"];
+    $device2 = $_POST["device2"];
 }
 
 if(!isset($_POST["device3"])) {
-    $device='';
+    $device3='';
 }else{
-    $device = $_POST["device3"];
+    $device3 = $_POST["device3"];
 }
 
 if(!isset($_POST["device4"])) {
-    $device='';
+    $device4='';
 }else{
-    $device = $_POST["device4"];
+    $device4 = $_POST["device4"];
 }
 
 //for a checkbox on topics(Check query as Device has been implemented
@@ -52,7 +52,7 @@ VALUES ('$pic','$phone', '$email','$gender',' $age ','$country','$county','$devi
 if ($conn->query($sql) === TRUE) {
     echo "Redirecting...";
     echo '<script>
-alert("Survey Saved Successful...");
+alert("Survey Saved Successfully...");
 window.location.href = "../../index.php"</script>'; /* Redirect browser */
     exit();
 } else {

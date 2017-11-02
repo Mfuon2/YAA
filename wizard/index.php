@@ -184,16 +184,16 @@
                                                 <select class="form-control" name="age">
                                                     <option disabled="" selected="">- Age -</option>
                                                     <option value="below 18"><18</option>
-                                                    <option value="18 to 24">18-24</option>
-                                                    <option value="25 to 29">25-29</option>
-                                                    <option value="30 to 35">30-35</option>
+                                                    <option value="18 - 24">18-24</option>
+                                                    <option value="25 - 29">25-29</option>
+                                                    <option value="30 - 35">30-35</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label>Country <small>(required)</small></label>
                                                 <select class="form-control" name="country">
                                                     <option disabled="" selected="">- Country -</option>
-                                                    <option value="KE">Kenya</option>
+                                                    <option value="KENYA">Kenya</option>
                                                     <option value="O">Other</option>
                                                 </select>
                                                 <input name="specifyCountry" type="text" hidden placeholder="country">
