@@ -10,8 +10,8 @@
     <schema id="4" parent="1" name="mysql"/>
     <schema id="5" parent="1" name="performance_schema"/>
     <schema id="6" parent="1" name="phpmyadmin"/>
-    <schema id="7" parent="1" name="rems"/>
-    <schema id="8" parent="1" name="test"/>
+    <schema id="7" parent="1" name="test"/>
+    <schema id="8" parent="1" name="mappingapp"/>
     <table id="9" parent="2" name="bmgf"/>
     <column id="10" parent="9" name="Id">
       <Position>1</Position>
@@ -37,7 +37,7 @@
     </column>
     <column id="15" parent="9" name="Age">
       <Position>6</Position>
-      <DataType>int(100)|0</DataType>
+      <DataType>varchar(20)|0</DataType>
     </column>
     <column id="16" parent="9" name="Country">
       <Position>7</Position>
