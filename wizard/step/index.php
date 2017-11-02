@@ -368,7 +368,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Other (specify)</label>
-                                                        <input name="others" class="form-control" type="text" placeholder="Other topic">
+                                                        <input name="othertopic" class="form-control" type="text" placeholder="Other topic">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
