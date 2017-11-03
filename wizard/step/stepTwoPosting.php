@@ -1,5 +1,6 @@
 <?php
 // Start the session
+include 'ClearSession.php';
 $sess->start();
 
 include '../../configs/connection.php';
