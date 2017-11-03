@@ -4,8 +4,9 @@ var activateFinish = function (yes) {
     console.log("========= " +state);
 
     if(state === 'yes'){
+        el('stepOne').action = "step/stepTwoPosting.php";
         this.enableButton('finish');
-        this.changeButtonValue('finish','Save');
+        this.changeButtonValue('finish','Proceed To Step Two');
 
         el('finish').addEventListener("click", function(){
            redirect('stepTow.php');

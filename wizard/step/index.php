@@ -1,3 +1,6 @@
+<?php
+$sess->start();
+?>
 
 <!doctype html>
 <html lang="en">
@@ -67,7 +70,12 @@
                         <form action="stepOnePosting.php" method="POST" >
                             <div class="wizard-header text-center">
                                 <h3 class="wizard-title">Step 2</h3>
-                                <p class="category">Completing the survey and joining this growing network of youth will take less than 10 minutes</p>
+                                <h3 class="wizard-title">
+                                    <?php
+                                    echo "Welcome ".$_SESSION['email']
+                                    ?>
+                                </h3>
+                                <p class="category">Please take the survey and join this growing network of youth which will at least less than 10 minutes</p>
                             </div>
 
                             <div class="wizard-navigation" >

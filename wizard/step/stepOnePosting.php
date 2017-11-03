@@ -3,7 +3,6 @@ include '../../configs/connection.php';
 include 'commonFunction.php';
 $conn = $ourConnection->connect();
 
-
 $pic = $pst->postFieldValue("picture");
 $phone = $pst->postFieldValue("phone");
 $email = $pst->postFieldValue("email");
@@ -36,7 +35,9 @@ VALUES ('$pic','$phone', '$email','$gender',' $age ','$country',' $county',' > $
 ','$infoSupport','','$howYouKnewUst')";
 
 if ($conn->query($sql) === TRUE) {
+
     echo "Redirecting...";
+
     echo '<script>
 alert("Survey Saved Successfully...");
 window.location.href = "../../index.php"</script>'; /* Redirect browser */
@@ -44,6 +45,5 @@ window.location.href = "../../index.php"</script>'; /* Redirect browser */
 } else {
 //    echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
 
 ?>

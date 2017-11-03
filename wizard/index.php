@@ -63,7 +63,7 @@
                 <div class="wizard-container">
 
                     <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                        <form action="step/stepOnePosting.php" method="POST">
+                        <form id="stepOne" action="step/stepOnePosting.php" method="POST">
                             <!--        You can switch " data-color="orange" "  with one of the next bright colors: "blue", "green", "orange", "red", "azure"          -->
 
                             <div class="wizard-header text-center">
@@ -131,12 +131,18 @@
                                     <div class="row">
                                         <h5 class="info-text"> Agreement </h5>
                                         <div class="col-md-10 col-md-offset-1">
-                                            <h6>By completing this registration, you are agreeing to let us share
+
+                                            <h6>
+                                                By completing this registration, you are agreeing to let us share
                                                 your organization/network’s information publicly or with other
                                                 organizations working to support youth advocacy efforts.
                                                 <br>
                                                 If you do not want us to share your organization/network’s information,
                                                 please check <a href="../index.php">Here</a></h6>
+
+                                        </div>
+                                        <div class="col-sm-5 col-sm-offset-1">
+                                            <label><input required class="form-control" type="checkbox" value="AGREE" name="agreement"/> Agree With Us</label>
                                         </div>
                                     </div>
                                 </div>
@@ -154,13 +160,13 @@
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label>Phone Number <small>(required)</small></label>
-                                                    <input name="phone" type="text" value="" class="form-control" placeholder="+2547222222">
+                                                    <input required name="phone" type="text" value="" class="form-control" placeholder="+2547222222">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label>Email <small>(required)</small></label>
-                                                    <input name="email" type="email" class="form-control" value="" placeholder="username@xyz.com">
+                                                    <input required name="email" type="email" class="form-control" value="" placeholder="username@xyz.com">
                                                 </div>
                                             </div>
 
@@ -169,7 +175,7 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Gender <small>(required)</small></label>
-                                                <select class="form-control" name="gender">
+                                                <select required class="form-control" name="gender">
                                                     <option disabled="" selected="">- Gender -</option>
                                                     <option value="M">Male</option>
                                                     <option value="F">Female </option>
@@ -181,7 +187,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Age <small>(required)</small></label>
-                                                <select class="form-control" name="age">
+                                                <select required class="form-control" name="age">
                                                     <option disabled="" selected="">- Age -</option>
                                                     <option value="below 18"><18</option>
                                                     <option value="18 - 24">18-24</option>
@@ -191,7 +197,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Country <small>(required)</small></label>
-                                                <select class="form-control" name="country">
+                                                <select required class="form-control" name="country">
                                                     <option disabled="" selected="">- Country -</option>
                                                     <option value="KENYA">Kenya</option>
                                                     <option value="O">Other</option>
@@ -200,7 +206,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>County <small>(required)</small></label>
-                                                <select class="form-control" name="county">
+                                                <select required class="form-control" name="county">
                                                     <option disabled="" selected="">- County -</option>
                                                     <option value="Baringo">Baringo</option>
                                                     <option value="Bomet">Bomet</option>
@@ -380,7 +386,7 @@
                                             <div class="form-group">
                                                 <label>Password</label><br>
                                                 <p  id="childId"></p><br>
-                                                <input id="passwordId" type="password" class="form-control" onkeyup="checkPassword('passwordId','childId')" value="" placeholder="Other Source">
+                                                <input required id="passwordId" type="password" class="form-control" onkeyup="checkPassword('passwordId','childId')" value="" placeholder="Other Source">
 
                                             </div>
                                         </div>
@@ -408,10 +414,10 @@
                                         <div class="col-sm-12">
                                             <h5 class="info-text"> Are you part of an advocacy organisation/network ?
                                                 <br>
-                                                <a href="step/index.php" class="btn btn-fill btn-primary" onclick="activateFinish('yes')">
+                                                <a value="Y" href="#" class="btn btn-fill btn-primary" onclick="activateFinish('yes')">
                                                     Yes
                                                 </a>
-                                                <a href="#" class="btn btn-fill btn-danger" onclick="activateFinish()">
+                                                <a value="" href="#" class="btn btn-fill btn-danger" onclick="activateFinish()">
                                                     No
                                                 </a>
                                             </h5>
