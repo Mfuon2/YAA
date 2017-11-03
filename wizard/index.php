@@ -393,7 +393,7 @@
 
                                         <div class="col-sm-5">
                                             <div class="form-group">
-                                                <label><a href="forgotPassword.php" target="_blank">Forgot my password ?</a></label><br>
+                                                <label><a href="ForgotPassword.php" target="_blank">Forgot my password ?</a></label><br>
                                             </div>
                                         </div>
                                     </div>
