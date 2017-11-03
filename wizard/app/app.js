@@ -5,6 +5,7 @@ var activateFinish = function (yes) {
 
     if(state === 'yes'){
         el('stepOne').action = "step/stepTwoPosting.php";
+        swal("Good job!","Thank You for Step One Exercise, Please SAVE the Survey at The Bottom before Proceeding", "success");
         this.enableButton('finish');
         this.changeButtonValue('finish','Proceed To Step Two');
 
