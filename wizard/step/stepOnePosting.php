@@ -1,53 +1,39 @@
 <?php
 include '../../configs/connection.php';
+include 'commonFunction.php';
 $conn = $ourConnection->connect();
 
-$pic = $_POST["picture"];
-$phone = $_POST["phone"];
-$email = $_POST["email"];
 
-//for a select option
-$gender = $_POST["gender"];
-$age = $_POST["age"];
-$country = $_POST["country"];
-$county = $_POST["county"];
-
-//for a checkbox on devices
-//if(!isset($_POST["device"])) ? $device='N/A' : $device = $_POST["device"];
-
-if(!isset($_POST["device"])) {
-    $device='';
-}else{
-    $device = $_POST["device"];
-}
-if(!isset($_POST["device2"])) {
-    $device2='';
-}else{
-    $device2 = $_POST["device2"];
-}
-
-if(!isset($_POST["device3"])) {
-    $device3='';
-}else{
-    $device3 = $_POST["device3"];
-}
-
-if(!isset($_POST["device4"])) {
-    $device4='';
-}else{
-    $device4 = $_POST["device4"];
-}
-
-//for a checkbox on topics(Check query as Device has been implemented
-$topics = $_POST["democracy"];
-
-
+$pic = $pst->postFieldValue("picture");
+$phone = $pst->postFieldValue("phone");
+$email = $pst->postFieldValue("email");
+$gender = $pst->postFieldValue("gender");
+$age = $pst->postFieldValue("age");
+$country = $pst->postFieldValue("country");
+$county = $pst->postFieldValue("county");
+$device = $pst->postFieldValue("device");
+$device2 = $pst->postFieldValue("device2");
+$device3 = $pst->postFieldValue("device3");
+$device4 = $pst->postFieldValue("device4");
+$democracy = $pst->postFieldValue("democracy");
+$education = $pst->postFieldValue("education");
+$family = $pst->postFieldValue("family");
+$genderequality = $pst->postFieldValue("genderequality");
+$health = $pst->postFieldValue("health");
+$nutrition = $pst->postFieldValue("nutrition");
+$reproductive = $pst->postFieldValue("reproductive");
+$otherMedia = $pst->postFieldValue("otherMedia");
+$infoSupport = $pst->postFieldValue("infoSupport");
+$OtherInfoSupportt = $pst->postFieldValue("OtherInfoSupport");
+$howYouKnewUst = $pst->postFieldValue("howYouKnewUs");
 
 $sql = "INSERT INTO bmgf (
 Picture, PhoneNo, email, Gender, Age, 
-Country, County, DeviceKind,TopicofInterest
+Country, County, DeviceKind,TopicofInterest,OtherTopics,InformationSupport,OtherInformation,HeardAboutUs
 )
-VALUES ('$pic','$phone', '$email','$gender',' $age ','$country','$county','$device' '> $device2' '> $device3 '  '> $device4' ,'$topics')";
+VALUES ('$pic','$phone', '$email','$gender',' $age ','$country',' $county',' > $device' ' > $device2' ' > $device3 ' ' > $device4 
+',' > $democracy' ' > $education' ' > $family ' ' > $genderequality ' ' > $health' ' > $nutrition ' ' > $reproductive ','$otherMedia
+','$infoSupport','','$howYouKnewUst')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Redirecting...";

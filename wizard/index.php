@@ -336,7 +336,6 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-
                                             <label></i>Other (Specify) <small>(Optional)</small></label>
                                             <input name="otherMedia" type="text" class="form-control" placeholder="Other" value="">
                                         </div>
@@ -368,13 +367,13 @@
                                         <div class="col-sm-5">
                                             <div class="radio" >
                                                 <label>Other (Specify)</label>
-                                                <input type="text" name="OtherInfo" class="form-control" placeholder="Other Source">
+                                                <input type="text" name="OtherInfoSupport" class="form-control" placeholder="Other Source">
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
                                             <div class="form-group">
                                                 <label>How did you hear about the Youth Advocacy Portal?</label>
-                                                <textarea class="form-control" placeholder="How You Knew About Us" value=""></textarea>
+                                                <textarea class="form-control" placeholder="How You Knew About Us" name="howYouKnewUs"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
