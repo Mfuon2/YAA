@@ -33,6 +33,26 @@ var checkRegistrationBody = function(id){
 
 };
 
+var checkPassword = function(parentId,childId){
+    var elementValue = el(parentId).value;
+    var len = elementValue.length;
+    if(len < 5){
+        console.log("here");
+        el(childId).hidden=false;
+        el(childId).required = true;
+        el(childId).style.color='red';
+        el(childId).innerHTML="PASSWORD MUST BE MORE THAN 5 CHARACTERS";
+    }else if(len > 5 && len < 8){
+        el(childId).hidden=false;
+        el(childId).style.color='orange';
+        el(childId).innerHTML="Weak Password";
+    }else if(len > 7){
+        el(childId).hidden=false;
+        el(childId).style.color='green';
+        el(childId).innerHTML="<i>Good Password</i>";
+    }
+};
+
 var clearDiv = function(){
 
    return  window.location.assign('../../index.php');

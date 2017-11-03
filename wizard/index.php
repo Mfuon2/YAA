@@ -379,7 +379,9 @@
                                         <div class="col-sm-5">
                                             <div class="form-group">
                                                 <label>Password</label><br>
-                                                <input type="password" class="form-control" value="" placeholder="Other Source">
+                                                <p  id="childId"></p><br>
+                                                <input id="passwordId" type="password" class="form-control" onkeyup="checkPassword('passwordId','childId')" value="" placeholder="Other Source">
+
                                             </div>
                                         </div>
 
@@ -387,7 +389,7 @@
                                         <div class="col-sm-5">
                                             <div class="form-group">
                                                 <label>Confirm Password</label><br>
-                                                <input type="password" class="form-control" value="" placeholder="Other Source">
+                                                <input type="password" class="form-control" required value="" placeholder="Other Source">
                                             </div>
                                         </div>
 
