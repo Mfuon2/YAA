@@ -71,9 +71,9 @@ $sess->start();
                         <form action="stepOnePosting.php" method="POST" >
                             <div class="wizard-header text-center">
                                 <h3 class="wizard-title">Step 2</h3>
-                                <h3 class="wizard-title">
+                                <h3 style="color: green" class="wizard-title">
                                     <?php
-                                    echo "Welcome ".$_SESSION['email']
+                                    echo "Welcome Back ".$_SESSION['email']
                                     ?>
                                 </h3>
                                 <p class="category">Please take the survey and join this growing network of youth which will at least less than 10 minutes</p>
@@ -245,7 +245,7 @@ $sess->start();
                                             </div>
                                             <div class="form-group">
                                                 <label>We are registered with the <small>(required)</small></label>
-                                                <select id="RegistrationBody" onchange="checkRegistrationBody('RegistrationBody')" class="form-control" name="board">
+                                                <select id="RegistrationBody" onchange="checkRegistrationBody('RegistrationBody')" class="form-control" name="registrationBody">
                                                     <option disabled="" selected="">- Registration Body -</option>
                                                     <option value="NGO">NGO Board</option>
                                                     <option value="MSS">Ministry of Social Services</option>
@@ -329,7 +329,7 @@ $sess->start();
                                                         <label><input type="checkbox" value="National"name="national">National</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" value="Regional (East Africa)" name="eastAfrica">Regional (East Africa)</label>
+                                                        <label><input type="checkbox" value="Regional (East Africa)" name="eastAfricaRegion">Regional (East Africa)</label>
                                                     </div>
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" value="Regional (Africa)" name="Africa">Regional (Africa)</label>
@@ -375,10 +375,6 @@ $sess->start();
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" value="Reproductive rights" name="Reproductive">Reproductive rights</label>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Other (specify)</label>
-                                                        <input name="othertopic" class="form-control" type="text" placeholder="Other topic">
-                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>We work in the following areas
@@ -393,15 +389,11 @@ $sess->start();
                                                         <label><input type="checkbox" value="Slums" name="slums">Slums</label>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label>Other area (specify)</label>
-                                                    <input name="otherarea" class="form-control" type="text" placeholder="Other area">
-                                                </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <label>We engage in the following types of advocacy<small>(e.g., lobbying, grassroots mobilization, etc)</small></label>
-                                                    <textarea class="form-control" placeholder="Types of advocacy" name="advocacytype"></textarea>
+                                                    <textarea class="form-control" placeholder="Types of advocacy" name="advocacyType"></textarea>
                                                 </div>
                                             </div>
                                         </div>

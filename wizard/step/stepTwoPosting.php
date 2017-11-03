@@ -62,173 +62,63 @@ VALUES ('$pic','$phone', '$email','$gender',' $age ','$country',' $county',' > $
 
 //
 }
+$options = $pst->postFieldValue("options");
+$contactPerson = $pst->postFieldValue("contactPerson");
+$contactemail = $pst->postFieldValue("emailContactPerson");
+$contactposition = $pst->postFieldValue("positionOfContactPerson");
+$contactphone = $pst->postFieldValue("phoneOfContactPerson");
+$staffNo = $pst->postFieldValue("staff");
+$volunteerNo = $pst->postFieldValue("volunteers");
+$advocacyEffort = $pst->postFieldValue("advocacyEffort");
+$upload = $pst->postFieldValue("upload");
+$otherlevel = $pst->postFieldValue("otherlevel");
+$advocacytype = $pst->postFieldValue("advocacytype");
+$orgcountry = $pst->postFieldValue("orgcountry");
+$registrationstatus = $pst->postFieldValue("organizationRegistration");
+$operationyears = $pst->postFieldValue("yearsOfOperation");
+$femaleled = $pst->postFieldValue("femaleLed");
+$orgcounty = $pst->postFieldValue("organizationcounty");
+$registrationbody = $pst->postFieldValue("registrationBody");
+$otherbody = $pst->postFieldValue("umbrella");
+$othertopic = $pst->postFieldValue("othertopic");
 
-$youthled = $_POST["options"];
-$contactperson = $_POST["contactPerson"];
-$contactemail = $_POST["emailContactPerson"];
-$contactposition = $_POST["positionOfContactPerson"];
-$contactphone = $_POST["phoneOfContactPerson"];
-$staffNo = $_POST["staff"];
-$volunteerNo = $_POST["volunteers"];
-$advocacyEffort = $_POST["advocacyEffort"];
-$upload = $_POST["advocacyEffort"];
-$otherlevel = $_POST["otherlevel"];
-$advocacytype = $_POST["advocacytype"];
-
-//for a select option
-$orgcountry = $_POST["orgcountry"];
-$registrationstatus = $_POST["organizationRegistration"];
-$operationyears = $_POST["yearsOfOperation"];
-$femaleled = $_POST["femaleLed"];
-$orgcounty = $_POST["organizationcounty"];
-$registrationbody = $_POST["board"];
-$otherbody = $_POST["umbrella"];
-$othertopic = $_POST["othertopic"];
-//for a checkbox on devices
-//if(!isset($_POST["device"])) ? $device='N/A' : $device = $_POST["device"];
-
-if (!isset($_POST["primary"])) {
-    $primary = '';
-} else {
-    $primary = $_POST["primary"];
-}
-if (!isset($_POST["secondary"])) {
-    $secondary = '';
-} else {
-    $secondary = $_POST["secondary"];
-}
-
-if (!isset($_POST["disabilities"])) {
-    $disabilities = '';
-} else {
-    $disabilities = $_POST["disabilities"];
-}
-
-if (!isset($_POST["Women and girls"])) {
-    $Womenandgirls = '';
-} else {
-    $Womenandgirls = $_POST["Women and girls"];
-}
-
-if (!isset($_POST["lgbtq"])) {
-    $lgbtq = '';
-} else {
-    $lgbtq = $_POST["lgbtq"];
-}
-if (!isset($_POST["youth"])) {
-    $youth = '';
-} else {
-    $youth = $_POST["youth"];
-}
-//select levels
-
-if (!isset($_POST["county"])) {
-    $county = '';
-} else {
-    $county = $_POST["county"];
-}
-if (!isset($_POST["region"])) {
-    $region = '';
-} else {
-    $region = $_POST["region"];
-}
-
-if (!isset($_POST["national"])) {
-    $national = '';
-} else {
-    $national = $_POST["national"];
-}
-
-if (!isset($_POST["eastAfrica"])) {
-    $eastAfrica = '';
-} else {
-    $eastAfrica = $_POST["eastAfrica"];
-}
-
-if (!isset($_POST["lgbtq"])) {
-    $lgbtq = '';
-} else {
-    $lgbtq = $_POST["lgbtq"];
-}
-if (!isset($_POST["Africa"])) {
-    $Africa = '';
-} else {
-    $Africa = $_POST["Africa"];
-}
-if (!isset($_POST["Global"])) {
-    $Global = '';
-} else {
-    $Global = $_POST["Global"];
-}
-
-//Select for Advocacy topics
-
-if (!isset($_POST["Democracy"])) {
-    $Democracy = '';
-} else {
-    $Democracy = $_POST["Democracy"];
-}
-if (!isset($_POST["Education"])) {
-    $Education = '';
-} else {
-    $Education = $_POST["Education"];
-}
-
-if (!isset($_POST["Employment"])) {
-    $Employment = '';
-} else {
-    $Employment = $_POST["Employment"];
-}
-
-if (!isset($_POST["planning"])) {
-    $planning = '';
-} else {
-    $planning = $_POST["planning"];
-}
-
-if (!isset($_POST["equality"])) {
-    $equality = '';
-} else {
-    $equality = $_POST["equality"];
-}
-if (!isset($_POST["Health"])) {
-    $Health = '';
-} else {
-    $Health = $_POST["Health"];
-}
-if (!isset($_POST["Nutrition"])) {
-    $Nutrition = '';
-} else {
-    $Nutrition = $_POST["Nutrition"];
-}
-if (!isset($_POST["Reproductive"])) {
-    $Reproductive = '';
-} else {
-    $Reproductive = $_POST["Reproductive"];
-}
-
-//Select for areas
-
-if (!isset($_POST["urban"])) {
-    $urban = '';
-} else {
-    $urban = $_POST["urban"];
-}
-if (!isset($_POST["rural"])) {
-    $rural = '';
-} else {
-    $rural = $_POST["rural"];
-}
-
-if (!isset($_POST["slums"])) {
-    $slums = '';
-} else {
-    $slums = $_POST["slums"];
-}
+//for a checkbox on devices for >We work with and on behalf of
+$primary = $pst->postFieldValue("primary");
+$secondary = $pst->postFieldValue("secondary");
+$disabilities = $pst->postFieldValue("disabilities");
+$Womenandgirls = $pst->postFieldValue("Women and girls");
+$lgbtq = $pst->postFieldValue("lgbtq");
+$youth = $pst->postFieldValue("youth");
 
 
-//for a checkbox on topics(Check query as Device has been implemented
-$topics = $_POST["democracy"];
+//checkboxes for We work at the following levels of government
+$county = $pst->postFieldValue("county");
+$region = $pst->postFieldValue("region");
+$national = $pst->postFieldValue("national");
+$eastAfrica = $pst->postFieldValue("eastAfricaRegion");
+$Africa = $pst->postFieldValue("Africa");
+$Global = $pst->postFieldValue("Global");
+$Democracy = $pst->postFieldValue("Democracy");
+$Education = $pst->postFieldValue("Education");
+$Employment = $pst->postFieldValue("Employment");
+$planning = $pst->postFieldValue("planning");
+$equality = $pst->postFieldValue("equality");
+$Health = $pst->postFieldValue("Health");
+$Nutrition = $pst->postFieldValue("Nutrition");
+$Reproductive = $pst->postFieldValue("Reproductive");
+
+//checkboxes for We work in the following areas
+
+$urban = $pst->postFieldValue("urban");
+$rural = $pst->postFieldValue("rural");
+$slums = $pst->postFieldValue("slums");
+$advocacyType = $pst->postFieldValue("advocacyType");
+
+$phoneNumber = $_SESSION['phone'];
+$emailAddress = $_SESSION['email'];
+
+
+$getUserProfile = "select id from bmgf where PhoneNo = $phoneNumber and email = $emailAddress";
 
 
 $sql = "INSERT INTO bmgf (
